@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="KGk-i7-Jjw" customClass="ProgressBarsTableViewCell" customModule="TrackMyFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="ohR-7W-Of6">
+                        <rect key="frame" x="30" y="106.5" width="66.5" height="2"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128 g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg6-xe-NJp">
+                        <rect key="frame" x="30" y="47.5" width="36" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOREM IPSUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgM-hm-Mon">
+                        <rect key="frame" x="30" y="79.5" width="66.5" height="12"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95 g" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crq-Uu-Dcf">
+                        <rect key="frame" x="277" y="47.5" width="28" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAUDEAMUS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVE-0W-t1S">
+                        <rect key="frame" x="244" y="79.5" width="61" height="12"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aOC-0E-bR5">
+                        <rect key="frame" x="238.5" y="106.5" width="66.5" height="2"/>
+                    </progressView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pg6-xe-NJp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="1aP-K3-1Kp"/>
+                    <constraint firstAttribute="trailing" secondItem="aOC-0E-bR5" secondAttribute="trailing" constant="30" id="3MZ-C1-RVb"/>
+                    <constraint firstAttribute="trailing" secondItem="Crq-Uu-Dcf" secondAttribute="trailing" constant="30" id="8Vg-vG-urE"/>
+                    <constraint firstItem="qgM-hm-Mon" firstAttribute="top" secondItem="Pg6-xe-NJp" secondAttribute="bottom" constant="15" id="AOO-J1-O64"/>
+                    <constraint firstItem="ohR-7W-Of6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="E83-xV-Dhn"/>
+                    <constraint firstItem="aOC-0E-bR5" firstAttribute="width" secondItem="ohR-7W-Of6" secondAttribute="width" id="GrQ-zh-vSE"/>
+                    <constraint firstItem="qgM-hm-Mon" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Icx-BF-TJP"/>
+                    <constraint firstItem="ohR-7W-Of6" firstAttribute="width" secondItem="qgM-hm-Mon" secondAttribute="width" id="Jrd-Xh-kUp"/>
+                    <constraint firstAttribute="bottom" secondItem="ohR-7W-Of6" secondAttribute="bottom" constant="10" id="KKM-n5-FIb"/>
+                    <constraint firstItem="aOC-0E-bR5" firstAttribute="top" secondItem="SVE-0W-t1S" secondAttribute="bottom" constant="15" id="OwI-GX-PEo"/>
+                    <constraint firstAttribute="trailing" secondItem="SVE-0W-t1S" secondAttribute="trailing" constant="30" id="XbV-q9-yfj"/>
+                    <constraint firstItem="ohR-7W-Of6" firstAttribute="top" secondItem="qgM-hm-Mon" secondAttribute="bottom" constant="15" id="e8e-fZ-fat"/>
+                    <constraint firstItem="SVE-0W-t1S" firstAttribute="top" secondItem="Crq-Uu-Dcf" secondAttribute="bottom" constant="15" id="uQZ-wg-Zfw"/>
+                    <constraint firstAttribute="bottom" secondItem="aOC-0E-bR5" secondAttribute="bottom" constant="10" id="ufd-38-VXI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabelLeft" destination="qgM-hm-Mon" id="glK-BM-7dP"/>
+                <outlet property="descriptionLabelRight" destination="SVE-0W-t1S" id="OAh-Gx-Tvr"/>
+                <outlet property="progressBarLeft" destination="ohR-7W-Of6" id="TLA-Bo-xhn"/>
+                <outlet property="progressBarRight" destination="aOC-0E-bR5" id="Tyz-oT-gtW"/>
+                <outlet property="weightLabelLeft" destination="Pg6-xe-NJp" id="FGL-o9-K1e"/>
+                <outlet property="weightLabelRight" destination="Crq-Uu-Dcf" id="l13-7n-znF"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="69"/>
+        </tableViewCell>
+    </objects>
+</document>

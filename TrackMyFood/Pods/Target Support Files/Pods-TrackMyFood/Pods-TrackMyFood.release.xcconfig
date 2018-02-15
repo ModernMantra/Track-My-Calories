@@ -1,0 +1,11 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Charts" "$PODS_CONFIGURATION_BUILD_DIR/MBCircularProgressBar" "$PODS_CONFIGURATION_BUILD_DIR/Realm" "$PODS_CONFIGURATION_BUILD_DIR/RealmSwift" "$PODS_CONFIGURATION_BUILD_DIR/SwiftSpinner" "$PODS_CONFIGURATION_BUILD_DIR/UICountingLabel"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Charts/Charts.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MBCircularProgressBar/MBCircularProgressBar.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Realm/Realm.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/RealmSwift/RealmSwift.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SwiftSpinner/SwiftSpinner.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/UICountingLabel/UICountingLabel.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "Charts" -framework "MBCircularProgressBar" -framework "Realm" -framework "RealmSwift" -framework "SwiftSpinner" -framework "UICountingLabel"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

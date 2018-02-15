@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="222" id="KGk-i7-Jjw" customClass="DailyCircleTableViewCell" customModule="TrackMyFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="221.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5h-8g-GAD" customClass="MBCircularProgressBarView">
+                        <rect key="frame" x="0.0" y="0.0" width="394" height="222"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAZ-fO-VGy">
+                                <rect key="frame" x="0.0" y="135" width="394" height="87"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OF 2430" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei8-9G-qEp">
+                                        <rect key="frame" x="168.5" y="35.5" width="58" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ei8-9G-qEp" firstAttribute="centerX" secondItem="YAZ-fO-VGy" secondAttribute="centerX" id="2YY-LY-ZyB"/>
+                                    <constraint firstItem="Ei8-9G-qEp" firstAttribute="centerY" secondItem="YAZ-fO-VGy" secondAttribute="centerY" id="cFt-TE-Rbt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7L-Ey-OwT">
+                                <rect key="frame" x="0.0" y="0.0" width="394" height="87"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALORIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6r-KW-rUs">
+                                        <rect key="frame" x="160.5" y="35.5" width="73.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="A6r-KW-rUs" firstAttribute="centerX" secondItem="o7L-Ey-OwT" secondAttribute="centerX" id="gh7-s6-uj6"/>
+                                    <constraint firstItem="A6r-KW-rUs" firstAttribute="centerY" secondItem="o7L-Ey-OwT" secondAttribute="centerY" id="hLl-7P-f8q"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="260" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tED-IP-nXt" customClass="UICountingLabel">
+                                <rect key="frame" x="167.5" y="87" width="58.5" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YAZ-fO-VGy" firstAttribute="leading" secondItem="a5h-8g-GAD" secondAttribute="leading" id="1HA-7a-Ptb"/>
+                            <constraint firstItem="o7L-Ey-OwT" firstAttribute="leading" secondItem="a5h-8g-GAD" secondAttribute="leading" id="EIR-Gp-Syw"/>
+                            <constraint firstItem="tED-IP-nXt" firstAttribute="centerY" secondItem="a5h-8g-GAD" secondAttribute="centerY" id="HQW-ZB-NDc"/>
+                            <constraint firstItem="YAZ-fO-VGy" firstAttribute="top" secondItem="tED-IP-nXt" secondAttribute="bottom" id="RVC-ji-cBe"/>
+                            <constraint firstItem="tED-IP-nXt" firstAttribute="top" secondItem="o7L-Ey-OwT" secondAttribute="bottom" id="SGW-Ca-IHm"/>
+                            <constraint firstItem="tED-IP-nXt" firstAttribute="centerX" secondItem="a5h-8g-GAD" secondAttribute="centerX" id="V7x-2E-hac"/>
+                            <constraint firstAttribute="trailing" secondItem="o7L-Ey-OwT" secondAttribute="trailing" id="VPS-co-PFB"/>
+                            <constraint firstAttribute="trailing" secondItem="YAZ-fO-VGy" secondAttribute="trailing" id="eVv-lh-e9B"/>
+                            <constraint firstAttribute="bottom" secondItem="YAZ-fO-VGy" secondAttribute="bottom" id="pQv-My-HwB"/>
+                            <constraint firstItem="o7L-Ey-OwT" firstAttribute="top" secondItem="a5h-8g-GAD" secondAttribute="top" id="rUa-7x-cVp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showValueString" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                <real key="value" value="64"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="valueFontName" value="HelveticaNeue-Medium"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                <real key="value" value="26"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showUnitString" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="valueDecimalFontSize">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="progressRotationAngle">
+                                <real key="value" value="-50"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
+                                <real key="value" value="100"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="progressCapType">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="emptyLineWidth">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyLineColor">
+                                <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyLineStrokeColor">
+                                <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="emptyCapType">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                <color key="value" red="0.28235294119999998" green="0.33725490200000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                <color key="value" red="0.28235294119999998" green="0.33725490200000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="a5h-8g-GAD" secondAttribute="bottom" constant="-0.5" id="7aq-kF-Ax9"/>
+                    <constraint firstItem="a5h-8g-GAD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FHM-qX-mJX"/>
+                    <constraint firstItem="a5h-8g-GAD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TPy-vf-f03"/>
+                    <constraint firstAttribute="trailing" secondItem="a5h-8g-GAD" secondAttribute="trailing" id="UBx-m1-pfN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="circleProgressBar" destination="a5h-8g-GAD" id="uJx-am-1tb"/>
+                <outlet property="mainValue" destination="tED-IP-nXt" id="B3h-mP-SPO"/>
+                <outlet property="outOfTotalLabel" destination="A6r-KW-rUs" id="G99-Ej-rYG"/>
+            </connections>
+            <point key="canvasLocation" x="-37" y="28"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="FoodItemTableViewCell" customModule="TrackMyFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jed-hi-gn3">
+                        <rect key="frame" x="10" y="5" width="343" height="83.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dHW-B5-sw6">
+                                <rect key="frame" x="20" y="18.5" width="164.5" height="47.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="French Toast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLq-qh-kbk">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95 kCal / 1 portion (100g)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0Q-FR-yIh">
+                                        <rect key="frame" x="0.0" y="30.5" width="164.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="xrN-Ci-DWA">
+                                <rect key="frame" x="303" y="32.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="YP4-hb-WMu"/>
+                                    <constraint firstAttribute="height" constant="20" id="h5B-1T-Gn9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dHW-B5-sw6" firstAttribute="leading" secondItem="Jed-hi-gn3" secondAttribute="leading" constant="20" id="kcV-jM-iIe"/>
+                            <constraint firstItem="dHW-B5-sw6" firstAttribute="centerY" secondItem="Jed-hi-gn3" secondAttribute="centerY" id="peP-ji-gmV"/>
+                            <constraint firstItem="xrN-Ci-DWA" firstAttribute="centerY" secondItem="Jed-hi-gn3" secondAttribute="centerY" id="tAD-y0-qpW"/>
+                            <constraint firstAttribute="trailing" secondItem="xrN-Ci-DWA" secondAttribute="trailing" constant="20" id="u7Y-GC-Jgt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Jed-hi-gn3" secondAttribute="trailing" constant="10" id="1T8-7p-5QJ"/>
+                    <constraint firstItem="Jed-hi-gn3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="3pg-Ie-ALX"/>
+                    <constraint firstAttribute="bottom" secondItem="Jed-hi-gn3" secondAttribute="bottom" constant="5" id="EV6-l7-Qrh"/>
+                    <constraint firstItem="Jed-hi-gn3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QF5-D3-cBI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="Jed-hi-gn3" id="8zo-fa-oGV"/>
+                <outlet property="foodName" destination="VLq-qh-kbk" id="tFd-HA-cR4"/>
+                <outlet property="info" destination="l0Q-FR-yIh" id="hnR-gV-FXZ"/>
+                <outlet property="infoImage" destination="xrN-Ci-DWA" id="r9u-IE-xOJ"/>
+                <outlet property="infoTextLabel" destination="l0Q-FR-yIh" id="BXs-cV-4x5"/>
+            </connections>
+            <point key="canvasLocation" x="12.5" y="79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="info" width="100" height="100"/>
+    </resources>
+</document>

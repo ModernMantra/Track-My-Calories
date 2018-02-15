@@ -1,0 +1,31 @@
+PODS:
+  - Charts (3.0.4):
+    - Charts/Core (= 3.0.4)
+  - Charts/Core (3.0.4)
+  - MBCircularProgressBar (0.3.5)
+  - Realm (2.10.1):
+    - Realm/Headers (= 2.10.1)
+  - Realm/Headers (2.10.1)
+  - RealmSwift (2.10.1):
+    - Realm (= 2.10.1)
+  - SwiftSpinner (1.4.1)
+  - UICountingLabel (1.4.0)
+
+DEPENDENCIES:
+  - Charts
+  - MBCircularProgressBar
+  - RealmSwift
+  - SwiftSpinner
+  - UICountingLabel
+
+SPEC CHECKSUMS:
+  Charts: 0705898046257443f0afbbc3179f4b67507b6e48
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  Realm: fc7a317a5c2c9ba91f5f235ede4e2ea76e9eba0c
+  RealmSwift: 505ed6c15942a2e76f5cfa78a8667cfa997ee75b
+  SwiftSpinner: bf7c13332ad008952a09358cadf24a186510ae31
+  UICountingLabel: ed5ce5b6d5ef278ff40d99cfa49577a30ab0c87b
+
+PODFILE CHECKSUM: bae0cecf896e458dcfe553232a5b9dc217690611
+
+COCOAPODS: 1.3.1
