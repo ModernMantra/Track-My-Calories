@@ -7,3 +7,6 @@ Swift iOS Application which uses Core ML to determine the food from the image an
 ![Screenshot](https://github.com/ModernMantra/Track-My-Calories/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%206%20-%202018-02-16%20at%2000.08.38.png)
 
 
+![Screenshot](https://github.com/ModernMantra/Track-My-Calories/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%206%20-%202018-02-16%20at%2000.08.33.png)
+
+
